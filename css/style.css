@@ -52,13 +52,12 @@ main > div:first-child {
 
 .accounts-image, .onlinebanking-image, .security-image, .loans-image, .contact-image{
      grid-column: 1 / -1;
-
-     & img{
-          display: block;
-          max-height: 675px;
-          max-width: 100%;
-          }
 }
+
+main div img{
+     display: block;
+     max-height: 675px;
+     }
 
 #accounts {grid-row: 2;}
 #onlinebanking {grid-row: 3;}
@@ -80,12 +79,14 @@ main > div:first-child {
   /* Step 10: Write the selector/rule property to style the nav element */
 nav {
      max-width: 100%;
-          & ul {
-               display: flex;
-               padding: 35px 0 35px 0;
-               justify-content: end;
-               }
      }
+
+nav ul {
+     display: flex;
+     padding: 35px 0 35px 0;
+     justify-content: end;
+     }
+
   /* Step 11: Write the selector/rule property to update the .container class */
 main.container {
      display: grid;
@@ -103,16 +104,16 @@ main.container {
 
 .accounts-image, .security-image, .contact-image{
      grid-column: 1 / span 5;
-
-     & img{max-height: 100%;}
      }
 
 .onlinebanking-image, .loans-image{
      grid-column: 3 / span 5;
-
-     & img{max-height: 100%;}
      }
 
+main div img{
+     width: 100%;
+     max-height: 100%;
+     }
  /* Step 16:Write the selector/rule property to update the .text-block class */
  .text-block{
      max-height: 235px;
