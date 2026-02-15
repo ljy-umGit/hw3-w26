@@ -57,7 +57,7 @@ main > div:first-child {
           display: block;
           max-height: 675px;
           max-width: 100%;
-     }
+          }
 }
 
 #accounts {grid-row: 2;}
@@ -68,7 +68,7 @@ main > div:first-child {
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block{
-     align-items: left;
+     justify-items: start;
      align-self: center;
      grid-column: 2 / span 3;
      overflow: scroll;
@@ -83,8 +83,8 @@ nav {
           & ul {
                display: flex;
                padding: 35px 0 35px 0;
-               justify-content: right;
-          }
+               justify-content: end;
+               }
      }
   /* Step 11: Write the selector/rule property to update the .container class */
 main.container {
@@ -104,17 +104,13 @@ main.container {
 .accounts-image, .security-image, .contact-image{
      grid-column: 1 / span 5;
 
-     & img{
-          max-height: 100%;
-          }
+     & img{max-height: 100%;}
      }
 
 .onlinebanking-image, .loans-image{
      grid-column: 3 / span 5;
 
-     & img{
-          max-height: 100%;
-          }
+     & img{max-height: 100%;}
      }
 
  /* Step 16:Write the selector/rule property to update the .text-block class */
